@@ -1,0 +1,244 @@
+/* style.css */
+:root {
+    --bg-color: #121212;
+    --surface-color: #1e1e1e;
+    --primary-color: #bb86fc;
+    --text-main: #ffffff;
+    --text-muted: #b3b3b3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--surface-color);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+    background-color: rgba(187, 134, 252, 0.15);
+    color: var(--primary-color);
+}
+
+main {
+    flex: 1;
+    padding: 3rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+h1, h2 {
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+p {
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+/* Images and Galleries */
+.hero-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif; /* A slightly handwritten feel */
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    margin: 0;
+}
+
+/* The main 12-column grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 600px; /* Constrains the layout to a readable size */
+}
+
+/* Base styles for all boxes */
+.box {
+    border: 2px solid #6a0dad; /* Purple ink color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: #6a0dad;
+    background-color: transparent;
+    border-radius: 2px; /* Slight rounding so it doesn't look too rigid */
+}
+
+/* --- Specific Box Placements & Heights --- */
+
+/* Row 1 */
+.box-1 {
+    grid-column: 1 / 5; /* Starts at col line 1, ends at 5 */
+    height: 120px;
+}
+.box-2 {
+    grid-column: 1 / 5;
+    height: 120px;
+}
+
+/* Row 2 */
+.box-3 {
+    grid-column: 1 / 5; /* Wider than box 1 */
+    height: 180px; /* Taller box */
+}
+.box-4 {
+    grid-column: 8 / 12;
+    height: 160px;
+}
+
+/* Row 3 */
+.box-5 {
+    grid-column: 1 / 5;
+    height: 120px;
+}
+.box-6 {
+    grid-column: 7 / 11;
+    height: 120px;
+}
+
+/* Row 4 */
+.box-7 {
+    grid-column: 1 / 4; /* Narrowest left box */
+    height: 120px;
+}
+.box-8 {
+    grid-column: 5 / 13; /* Widest box, stretches to the end */
+    height: 100px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+}
+
+/* Contact Form */
+.contact-container {
+    background-color: var(--surface-color);
+    padding: 2.5rem;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-muted);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--bg-color);
+    border: 1px solid #333;
+    color: var(--text-main);
+    border-radius: 4px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: #000;
+    border: none;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #9965f4;
+}
+
+footer {
+    background-color: var(--surface-color);
+    text-align: center;
+    padding: 2rem 0;
+    color: var(--text-muted);
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
