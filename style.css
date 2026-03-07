@@ -101,7 +101,7 @@ body {
     font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif; /* A slightly handwritten feel */
     display: flex;
     justify-content: center;
-    padding: 100px;
+    padding: 40px;
     margin: 0;
 }
 
