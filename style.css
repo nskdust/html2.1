@@ -177,7 +177,7 @@ body {
     background-color: var(--surface-color);
     padding: 4rem;
     border-radius: 8px;
-    max-width: 1200px;
+    max-width: 10000px;
     margin: 0 auto;
 }
 
