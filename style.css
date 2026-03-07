@@ -110,7 +110,7 @@ body {
     display: grid;
     grid-template-columns: repeat(20, 1fr);
     gap: 20px;
-    width: 70%;
+    width: 100%;
     max-width: 600px; /* Constrains the layout to a readable size */
 }
 
