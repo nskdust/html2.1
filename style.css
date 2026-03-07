@@ -193,7 +193,7 @@ body {
 
 .form-group input,
 .form-group textarea {
-    width: 50%;
+    width: 100%;
     padding: 1rem;
     background-color: var(--bg-color);
     border: 1px solid #333;
