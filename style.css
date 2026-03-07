@@ -84,7 +84,7 @@ p {
 /* Images and Galleries */
 .hero-img {
     width: 70%;
-    max-height: 400px;
+    max-height: 200px;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 2rem;
