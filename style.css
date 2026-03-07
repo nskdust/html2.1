@@ -108,7 +108,7 @@ body {
 /* The main 12-column grid container */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(20, 1fr);
     gap: 20px;
     width: 100%;
     max-width: 600px; /* Constrains the layout to a readable size */
