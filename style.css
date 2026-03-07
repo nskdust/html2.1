@@ -175,7 +175,7 @@ body {
 /* Contact Form */
 .contact-container {
     background-color: var(--surface-color);
-    padding: 2.5rem;
+    padding: 4rem;
     border-radius: 8px;
     max-width: 800px;
     margin: 0 auto;
