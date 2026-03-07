@@ -86,7 +86,7 @@ p {
     width: 70%;
     max-height: 400px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 12px;
     margin-bottom: 2rem;
 }
 
